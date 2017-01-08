@@ -45,7 +45,7 @@ req._read = function(size) {
 };
 var res = response();
 var lug = {};
-mod.luggage(req, res, lug, function() {
+mod(req, res, lug, function() {
 	tap.assert.deepEqual(lug.post, {"one": "1", "two": "2", "three": "3"}, 'Should set post.');
 });
 
@@ -60,7 +60,7 @@ req2._read = function(size) {
 };
 var res2 = response();
 var lug2 = {};
-mod.luggage(req2, res2, lug2, function() {
+mod(req2, res2, lug2, function() {
 	tap.assert.deepEqual(lug2.post, {"from": ["TX", "", "", "", ""], "id": "1", "to": ["AL", "", "", "", ""]}, 'Should set post with arrays.');
 });
 
