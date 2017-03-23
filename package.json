@@ -22,7 +22,7 @@
     "agraddy.test.tap": "^0.2.0"
   },
   "dependencies": {
-    "agraddy.luggage.parse.form": "^0.6.0",
+    "agraddy.luggage.parse.form": "^0.7.0",
     "agraddy.luggage.parse.multipart": "^0.7.0"
   }
 }
